@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.hero {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c0a060;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+.fragrance-list {
+  padding: 3rem 2rem;
+  background: #121212;
+  text-align: center;
+}
+
+.fragrance-list h2 {
+  font-size: 2.5rem;
+  color: #c0a060;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: #1c1c1c;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 20px rgba(192, 160, 96, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #fff;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #0f0f0f;
+  color: #777;
+}
